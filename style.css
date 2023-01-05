@@ -304,6 +304,8 @@ h2 {
     margin-bottom: 30px;
 }
 
+/* Button */
+
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -323,7 +325,6 @@ h2 {
 .btn:hover {
     color: wheat;
     background-color: palevioletred;
-
 }
 
 
