@@ -250,61 +250,13 @@ h2 {
     transform: scale(1.1);
 }
 
-#about .about {
-    flex-direction: column-reverse;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
-}
-
-#about .col-left {
-    width: 250px;
-    height: 360px;
-}
-
-#about .col-right {
-    width: 100%;
-}
-
-#about .col-right .btn {
-    color: #29323c;
-    margin-bottom: 50px;
-    padding: 10px 10px;
-    font-size: 2rem;
-
-}
-/* i gave it a margin top*/
-#about .col-left .about-img {
+#about {
     height: 100%;
     width: 100%;
     position: relative;
     border: 10px solid white;
-    margin-top: 90%
+    
 }
-/*gave it a z index 1*/
-#about .col-left .about-img::after {
-    content: '';
-    position: absolute;
-    left: -33px;
-    height: 98%;
-    width: 98%;
-    border: 5px solid palevioletred;
-    z-index: 1;
-}
-
-#about .col-right h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: .2rem;
-    margin-bottom: 10px;
-}
-
-#about .col-right p {
-    margin-bottom: 30px;
-}
-
-/* Button */
 
 .btn {
     display: inline-block;
@@ -325,7 +277,84 @@ h2 {
 .btn:hover {
     color: wheat;
     background-color: palevioletred;
+
 }
+
+.about {
+    justify-content: center;
+    text-align: center;
+    color: palevioletred;
+}
+
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contact .contact-items{
+    width: 100%
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px #0000002c;
+
+}
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px palevioletred;
+}
+
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#footer{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer-container {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:white;
+}
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+    
+#footer .social-item img{
+    filter: grayscale(1);
+}
+
+#footer .social-item:hover img{
+    filter: grayscale(0);
+    transition: 3s ease filter;
+}
+
+
 
 
 
